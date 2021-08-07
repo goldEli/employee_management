@@ -1,0 +1,3 @@
+/Users/miaoyu/Desktop/test/employee_management/build/CMakeFiles/rebuild_cache.dir
+/Users/miaoyu/Desktop/test/employee_management/build/CMakeFiles/edit_cache.dir
+/Users/miaoyu/Desktop/test/employee_management/build/CMakeFiles/main.dir
