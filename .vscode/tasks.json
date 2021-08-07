@@ -1,25 +1,33 @@
 {
 	"version": "2.0.0",
+	"options": {
+		"cwd": "${workspaceFolder}/build"
+	},
 	"tasks": [
 		{
-			"type": "cppbuild",
-			"label": "C/C++: g++ build active file",
-			"command": "/usr/bin/g++",
+			"type": "shell",
+			"label": "cmake",
+			"command": "cmake",
 			"args": [
-				"-g",
-				"main.cpp",
-				"test/test.cpp",
-				"-o",
-				"${fileDirname}/main"
-			],
-			"options": {
-				"cwd": "${fileDirname}"
+				"-DCMAKE_BUILD_TYPE=Debug",
+				".."
+			]
+		},
+		{
+			"label": "make",
+			"group": {
+				"kind": "build",
+				"isDefault": true
 			},
-			"problemMatcher": [
-				"$gcc"
-			],
-			"group": "build",
-			"detail": "compiler: /usr/bin/g++"
+			"command": "make",
+			"args": []
+		},
+		{
+			"label": "Build",
+			"dependsOn": [
+				"cmake",
+				"make"
+			]
 		}
 	]
 }
