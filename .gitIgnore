@@ -1,3 +1,5 @@
 main
 /*.dSYM
 /build
+
+/test/build
