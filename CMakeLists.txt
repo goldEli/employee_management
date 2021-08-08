@@ -1,3 +1,3 @@
 project(employee_management)
 
-add_executable(main main.cpp ./test/test.cpp)
+add_executable(main main.cpp ./employee_manager/employee_manager.cpp)
