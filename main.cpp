@@ -15,7 +15,7 @@ int main(int argc, char **argv)
 		switch (choice)
 		{
 		case 0: // exit
-			// em.exitingSystem();
+			em.exitingSystem();
 			return 0;
 		case 1: // add
 			break;

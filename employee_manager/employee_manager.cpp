@@ -29,5 +29,7 @@ void EmployeeManager::showMenu()
 
 void EmployeeManager::exitingSystem()
 {
-	
+	cout << "Welcome for next time!" << endl;
+	system("read -n 1 -s -p \"Press any key to continue...\"");
+	exit(0);
 }
