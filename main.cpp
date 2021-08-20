@@ -1,11 +1,13 @@
 #include <iostream>
 #include "./employee_manager/employee_manager.h"
+#include "./employee/employee.h"
+#include "./normal_employee/normal_employee.h"
+#include <string>
 using namespace std;
 
 int main(int argc, char **argv)
 {
 	EmployeeManager em;
-
 	int choice = 0;
 
 	while (true)

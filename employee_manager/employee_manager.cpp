@@ -1,3 +1,4 @@
+#pragma once
 #include "employee_manager.h"
 #include <iostream>
 using namespace std;
@@ -25,6 +26,8 @@ void EmployeeManager::showMenu()
 	cout << "7. Clear all document" << endl;
 	cout << endl;
 	cout << endl;
+
+	cout << "please input number:" << endl;
 }
 
 void EmployeeManager::exitingSystem()
