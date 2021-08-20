@@ -8,5 +8,6 @@ class Normal_employee : public Employee
 {
 public:
 	Normal_employee(string id, string name, int age);
-	void getResponsibilities();
+	virtual void showInfo();
+	virtual string getJobTitle();
 };

@@ -10,5 +10,6 @@ public:
 	string m_Name;
 	string m_Id;
 	int m_Age;
-	virtual void getResponsibilities();
+	virtual void showInfo() = 0;
+	virtual string getJobTitle() = 0;
 };

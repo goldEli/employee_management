@@ -1,6 +1,9 @@
 #pragma once
 #include "employee_manager.h"
+#include "../employee/employee.h"
+#include "../normal_employee/normal_employee.h"
 #include <iostream>
+#include <string>
 using namespace std;
 
 EmployeeManager::EmployeeManager()
@@ -36,3 +39,35 @@ void EmployeeManager::exitingSystem()
 	system("read -n 1 -s -p \"Press any key to continue...\"");
 	exit(0);
 }
+
+void EmployeeManager::addEmployee(Employee &e){
+	int select = 1;
+	cout << "1. normal employee" << endl;
+	cout << "2. manager" << endl;
+	cout << "3. boss" << endl;
+	cin >> select;
+
+	switch (select)
+	{
+	case 1:
+		{
+			string id = "";
+			cout << "please input id:" << endl;
+			cin >> id;
+			string name = "";
+			cout << "please input name:" << endl;
+			cin >> id;
+			int age = 0;
+			cout << "please input age:" << endl;
+			cin >> age;
+
+			Employee *e = new Normal_employee(id, name, age);
+
+			
+		}
+		break;
+	
+	default:
+		break;
+	}
+};
